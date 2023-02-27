@@ -11,7 +11,7 @@ in_mileage = in_mileage.replace(",",".")
 x = []
 y = []
 
-
+print("yeeeeeeeaaaaaaaah")
 
 def read_data():
     connector = mysql.connector.connect ( user = "root", password = '313E.m313' , host = '127.0.0.1' , database = 'finall')
