@@ -10,7 +10,7 @@ x = []
 y = []
 
 def read_data():
-    connector = mysql.connector.connect ( user = "root", password = '313E.m313' , host = '127.0.0.1' , database = 'finall')
+    connector = mysql.connector.connect ( user = "root", password = '' , host = '127.0.0.1' , database = '')
     cursor = connector.cursor()
     syntax = (f"SELECT * FROM car;")
     cursor.execute(syntax)
