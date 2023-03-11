@@ -24,8 +24,8 @@ def use_data(name,n_price,n_mileage):
     ready = [n_mileage,n_price]
     x.append(ready)
     y.append(name)
-    clf = tree.DecisionTreeClassifier()
-    clf = clf.fit(x, y)
+    cls = tree.DecisionTreeClassifier()
+    cls = clf.fit(x, y)
     answer = clf.predict([in_price,in_mileage])
     print(answer)
 
