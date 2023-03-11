@@ -2,7 +2,7 @@
 import mysql.connector
 
 #make connection to database
-connector = mysql.connector.connect ( user = "root", password = '' , host = '127.0.0.1' , database = 'learn')
+connector = mysql.connector.connect ( user = "root", password = 'its*not*password' , host = '127.0.0.1' , database = 'learn')
 
 #make cursor
 cursor = connector.cursor()
@@ -17,7 +17,7 @@ connector.commit()
 connector.close()
 
 #make connection to database twice
-connector = mysql.connector.connect ( user = "root", password = '' , host = '127.0.0.1' , database = 'learn')
+connector = mysql.connector.connect ( user = "root", password = 'its*not*password' , host = '127.0.0.1' , database = 'learn')
 
 #make cursor
 cursor = connector.cursor()
