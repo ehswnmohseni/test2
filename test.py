@@ -10,7 +10,7 @@ y = []
 def read_data():
     connector = mysql.connector.connect ( user = "root", password = '' , host = '127.0.0.1' , database = '')
     cursor = connector.cursor()
-    syntax = (f"SELECT * FROM car;")
+    syntax = (f"SELECT * FROM cars;")
     cursor.execute(syntax)
     for name,price,mileage in cursor:
         mileage = mileage.replace(",",".")
