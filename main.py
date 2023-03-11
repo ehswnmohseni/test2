@@ -8,7 +8,7 @@ connector = mysql.connector.connect ( user = "root", password = 'its*not*passwor
 cursor = connector.cursor()
 
 #write mysql function
-cursor.execute("INSERT INTO people VALUES ('ha','m','26')")
+cursor.execute("INSERT INTO person VALUES ('ha','m','26')")
 
 #ready to finish?!
 connector.commit()
@@ -23,7 +23,7 @@ connector = mysql.connector.connect ( user = "root", password = 'its*not*passwor
 cursor = connector.cursor()
 
 #write mysql function in variable 
-query = ("SELECT * FROM people;")
+query = ("SELECT * FROM person;")
 cursor.execute(query)
 
 #make loop on database table's
