@@ -1,8 +1,6 @@
 from sklearn import tree
 import mysql.connector
 
-in_price = input("enter the price\n($19,000):")
-in_mileage = input("enter the price\n(101,813):")
 in_price = in_price.replace(",",".")
 in_price = in_price.replace("$","")
 in_mileage = in_mileage.replace(",",".")
